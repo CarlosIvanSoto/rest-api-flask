@@ -4,7 +4,7 @@ from routes.tasks import app as tasks_bp
 
 #app = Flask(__name__, static_url_path="/static")
 SQLITE_DB_URI = "sqlite:///db\\tasks.db"
-POSTGRES_DB_URI = "postgresql://root:gameue0912@137.184.54.115/tasksAPI"
+POSTGRES_DB_URI = "postgresql://postgres:root@postgres/tasksAPI"
 app = Flask(__name__)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SQLALCHEMY_DATABASE_URI"] = POSTGRES_DB_URI
@@ -24,7 +24,7 @@ def create_tables():
 @app.route('/ping')
 def ping():
     #create_tables()
-    #db.create_all()
+    db.create_all()
     return jsonify({"message": "Pong!"})
 #add routes tasks
 app.register_blueprint(tasks_bp)
