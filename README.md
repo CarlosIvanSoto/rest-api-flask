@@ -9,8 +9,12 @@ A dockerized app built on top of Flask, Postgres and SQLAlchemy in Python3
 - Docker Compose
 
 ## Commands
-
+### init
 - docker-compose up
+### erase
+- docker-compose down
+### erase all
+- docker-compose down --volumes
 
 ## URLs API 
 
