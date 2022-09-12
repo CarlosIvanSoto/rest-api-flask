@@ -1,7 +1,7 @@
 # TASK'S LIST API
-## Flask, Flask-SQLAlchemy, SQLAlchemy, psycopg2 in Docker
+## Flask, Flask-SQLAlchemy, SQLAlchemy, psycopg2, Postgres, pgAdmin4 in Docker
 
-A dockerized app built on top of Flask, Postgres and SQLAlchemy in Python3
+A dockerized app built on top of Flask, Postgres and SQLAlchemy in Python 3.11
 
 ## Requirements
 
